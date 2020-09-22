@@ -1,4 +1,4 @@
-## In order for this program to work you must install a MYSQL/Apache instance, we used MAMP(my port was 3008) that 
+## PROJET-C : mPlayer-OS 
 way you can import into PHPMYADMIN our c_projet.sql and have a MYSQL connection for our database. You must have 
 codeblocks installed,  the MYSQL folder in this folder you will 
 place in the codeblocks' MINGW include folder and libmysql.a you will place in 
