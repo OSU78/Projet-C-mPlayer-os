@@ -57,3 +57,9 @@ Ensuite on peut visualiser nos Playlists.Et les écouter.
 Finalement on peut simplement ajouter nos musiques aux playlists directement sur l&#39;Home. Il suffit d&#39;ouvrir la musique, aller sur l&#39;onglet Edit et ajouter à une Playlist, un onglet apparaitra ici il suffit de taper le nom de la Playlist et si celle-ci est bien écrit la musique sera bien ajouté a sa Playlist.
 
 ![picture](Picture/Image12.png)
+
+## REMARQUE IMPORTANTE /
+
+Pour pouvoir lancer le projet il vous faut PHPMYADMIN afin d'installer la bdd fictif(c_projet.sql) qui se trouve à la racine du projet pour faire les essait.
+Aussi n'oublier pas d'adapter les ports de connexion à la bdd ainsi que le mdp en fonction de votre environnement de travail en local.
+Compatible GTK3
