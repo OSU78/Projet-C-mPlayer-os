@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="windows1">
+    <property name="title" translatable="yes">Games - Instrument Recognisition</property>
+    <property name="resizable">False</property>
+    <child>
+      <object class="GtkFixed" id="fixedLogin">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkHSeparator" id="hseparator1">
+            <property name="width_request">613</property>
+            <property name="height_request">72</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">8</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHSeparator" id="hseparator2">
+            <property name="width_request">618</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="x">11</property>
+            <property name="y">324</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btninst3">
+            <property name="label" translatable="yes">CONNEXION</property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text" translatable="yes">Click to answer!</property>
+            <property name="use_action_appearance">False</property>
+            <signal name="clicked" handler="on_btninst3_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btninst4">
+            <property name="label" translatable="yes">CONNEXION</property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text" translatable="yes">Click to answer!</property>
+            <property name="use_action_appearance">False</property>
+            <signal name="clicked" handler="on_btninst4_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">370</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btninst1">
+            <property name="label" translatable="yes">CONNEXION</property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text" translatable="yes">Click to answer!</property>
+            <property name="use_action_appearance">False</property>
+            <signal name="clicked" handler="on_btninst1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btninst2">
+            <property name="label" translatable="yes">CONNEXION</property>
+            <property name="width_request">150</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text" translatable="yes">Click to answer!</property>
+            <property name="use_action_appearance">False</property>
+            <signal name="clicked" handler="on_btninst2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">370</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox4">
+            <property name="width_request">630</property>
+            <property name="height_request">60</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="lbl_Question2">
+                <property name="width_request">231</property>
+                <property name="height_request">29</property>
+                <property name="visible">True</property>
+                <property name="yalign">0.49000000953674316</property>
+                <property name="label" translatable="yes">Question Placeholder</property>
+                <attributes>
+                  <attribute name="weight" value="thin"/>
+                  <attribute name="foreground" value="#3b444f834f46"/>
+                  <attribute name="scale" value="2.000000"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="y">50</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox1">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="lbl_Result2">
+                <property name="width_request">231</property>
+                <property name="height_request">0</property>
+                <property name="visible">True</property>
+                <property name="yalign">0.49000000953674316</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="weight" value="thin"/>
+                  <attribute name="foreground" value="#ffff00000000"/>
+                  <attribute name="scale" value="2.000000"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">540</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEventBox" id="eventbox2">
+            <property name="width_request">300</property>
+            <property name="height_request">43</property>
+            <property name="visible">True</property>
+            <signal name="button-press-event" handler="on_click_back8" swapped="no"/>
+            <child>
+              <object class="GtkLabel" id="lbl_title2">
+                <property name="width_request">300</property>
+                <property name="height_request">43</property>
+                <property name="visible">True</property>
+                <property name="yalign">0.43999999761581421</property>
+                <property name="label" translatable="yes">Back to Games Menu</property>
+                <attributes>
+                  <attribute name="underline" value="True"/>
+                  <attribute name="foreground" value="#ffffa5a50000"/>
+                  <attribute name="scale" value="2.000000"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">165</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

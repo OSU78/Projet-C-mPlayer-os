@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy toplevel-contextual -->
+  <object class="GtkTextBuffer" id="textbuffer2">
+    <property name="text" translatable="yes">----------No Playlist</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="stock">gtk-apply</property>
+  </object>
+  <object class="GtkWindow" id="window14">
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="labelText1">
+            <property name="width_request">327</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">ADD TO PLAYLIST</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#15819711c908"/>
+              <attribute name="scale" value="2,000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">212</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="Gtk_entryNamePlaylist">
+            <property name="width_request">314</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">35</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+            <property name="secondary_icon_stock">gtk-edit</property>
+            <property name="secondary_icon_activatable">True</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_AddToPL">
+            <property name="label" translatable="yes">ADD TO PLAYLIST</property>
+            <property name="width_request">116</property>
+            <property name="height_request">44</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="image">image4</property>
+          </object>
+          <packing>
+            <property name="x">347</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblP1">
+            <property name="width_request">181</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes"> Playlist Name :</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#38e8a8c1eece"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">58</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lbl_reponsePl2">
+            <property name="width_request">363</property>
+            <property name="height_request">72</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">.................</property>
+            <attributes>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="size" value="6"/>
+              <attribute name="foreground" value="#604057362337"/>
+              <attribute name="background" value="#bc53e8b8ffff"/>
+              <attribute name="scale" value="5,000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">27</property>
+            <property name="y">158</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="btn_Quit13">
+            <property name="label">gtk-close</property>
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_stock">True</property>
+            <signal name="clicked" handler="on_btn_Quit13_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">666</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblP2">
+            <property name="width_request">187</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Playlist List:</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#38e8a8c1eece"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">216</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="textview2">
+            <property name="width_request">590</property>
+            <property name="height_request">552</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="wrap_mode">char</property>
+            <property name="cursor_visible">False</property>
+            <property name="buffer">textbuffer2</property>
+          </object>
+          <packing>
+            <property name="x">17</property>
+            <property name="y">278</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PROJET-C-MUSIC-BY-OS" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FmodTEST1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-mms-bitfields" />
+				</Compiler>
+				<Linker>
+					<Add library="glib-2.0" />
+					<Add library="pangocairo-1.0" />
+					<Add library="pangowin32-1.0" />
+					<Add library="atk-1.0" />
+					<Add library="gdk_pixbuf-2.0" />
+					<Add library="gdk-win32-2.0" />
+					<Add library="pango-1.0" />
+					<Add library="gmodule-2.0" />
+					<Add library="gobject-2.0" />
+					<Add library="gthread-2.0" />
+					<Add library="gtk-win32-2.0" />
+					<Add library="cairo" />
+					<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfmodex.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FmodTEST1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-mms-bitfields" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/gtk-2.0" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/cairo" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/gdk" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/glib-2.0" />
+			<Add directory="C:/Program Files (x86)/Gtk+/lib/glib-2.0/include" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/pango-1.0" />
+			<Add directory="C:/Program Files (x86)/Gtk+/lib/gtk-2.0/include" />
+			<Add directory="C:/Program Files (x86)/Gtk+/include/atk-1.0" />
+		</Compiler>
+		<Linker>
+			<Add library="gtk-win32-2.0" />
+			<Add library="gobject-2.0" />
+			<Add library="glib-2.0" />
+			<Add library="../../../../../../../../../Program Files (x86)/CodeBlocks/MinGW/mingw32/lib/libmysqlclient.a" />
+			<Add directory="C:/Program Files (x86)/Gtk+/lib" />
+		</Linker>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy toplevel-contextual -->
+  <object class="GtkTextBuffer" id="textbuffer2">
+    <property name="text" translatable="yes">No Playlist</property>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="stock">gtk-media-play</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="stock">gtk-find</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="has_tooltip">True</property>
+    <property name="tooltip_text" translatable="yes">Delete playlist!</property>
+    <property name="stock">gtk-no</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer1">
+    <property name="text" translatable="yes">---------------------------------------------------------------AUCUNE PLAYLIST-----------------------------------------------------------
+
+
+
+
+
+				
+
+
+
+
+																																																																																				VIDE</property>
+  </object>
+  <object class="GtkWindow" id="windows13">
+    <property name="type">popup</property>
+    <property name="modal">True</property>
+    <property name="window_position">center</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="skip_taskbar_hint">True</property>
+    <child>
+      <object class="GtkFixed" id="fixed13">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkVScrollbar" id="vscrollbar1">
+            <property name="width_request">47</property>
+            <property name="height_request">746</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="x">780</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblListePlaylist">
+            <property name="width_request">542</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">List of your Playlists</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#15819711c908"/>
+              <attribute name="scale" value="2,000000"/>
+            </attributes>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="btn_Quit13">
+            <property name="label">gtk-close</property>
+            <property name="width_request">72</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_stock">True</property>
+            <signal name="clicked" handler="on_btn_Quit13_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">722</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox1">
+            <property name="width_request">546</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkEntry" id="Gtk_EntryPLname2">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_text" translatable="yes">Enter the name of the Playlist!</property>
+                <property name="max_length">35</property>
+                <property name="invisible_char">●</property>
+                <property name="secondary_icon_stock">gtk-info</property>
+                <property name="secondary_icon_tooltip_text" translatable="yes">Enter the name of the Playlist!</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_GetPlExist">
+                <property name="label" translatable="yes">OPEN</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="has_tooltip">True</property>
+                <property name="tooltip_text" translatable="yes">Click to show the content of the Playlists!</property>
+                <property name="use_action_appearance">False</property>
+                <property name="image">image2</property>
+                <signal name="clicked" handler="on_btn_GetPlExist_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">23</property>
+            <property name="y">61</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkTextView" id="textview1">
+            <property name="width_request">591</property>
+            <property name="height_request">574</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="editable">False</property>
+            <property name="wrap_mode">char</property>
+            <property name="cursor_visible">False</property>
+            <property name="buffer">textbuffer1</property>
+          </object>
+          <packing>
+            <property name="x">22</property>
+            <property name="y">143</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lbl_ReponsePlExist">
+            <property name="width_request">318</property>
+            <property name="height_request">31</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">..............................</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="foreground" value="#229b8c1dde21"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">22</property>
+            <property name="y">98</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_DeletePl">
+            <property name="label" translatable="yes">Delete</property>
+            <property name="width_request">89</property>
+            <property name="height_request">37</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="image">image1</property>
+          </object>
+          <packing>
+            <property name="x">480</property>
+            <property name="y">99</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox2">
+            <property name="width_request">172</property>
+            <property name="height_request">42</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkButton" id="btn_readPL">
+                <property name="label" translatable="yes">Listen to the Playlist</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_action_appearance">False</property>
+                <property name="image">image3</property>
+                <signal name="clicked" handler="on_btn_readPL_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">619</property>
+            <property name="y">181</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="windows12">
+    <property name="type">popup</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="type_hint">dialog</property>
+    <property name="skip_taskbar_hint">True</property>
+    <child>
+      <object class="GtkFixed" id="fixed2">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkLabel" id="labelText1">
+            <property name="width_request">527</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">CREATE NEW PLAYLIST</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#15819711c908"/>
+              <attribute name="scale" value="2,000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">43</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_CreatePlaylist">
+            <property name="label" translatable="yes">CREATE</property>
+            <property name="width_request">123</property>
+            <property name="height_request">49</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <signal name="clicked" handler="on_btn_CreatePlaylist_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">252</property>
+            <property name="y">288</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblP1">
+            <property name="width_request">271</property>
+            <property name="height_request">33</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes"> Playlist Name :</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#38e8a8c1eece"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">174</property>
+            <property name="y">97</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblP2">
+            <property name="width_request">181</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Name of creator:</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="size" value="5"/>
+              <attribute name="foreground" value="#3db796dfddb6"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">211</property>
+            <property name="y">173</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHSeparator" id="hseparator1">
+            <property name="width_request">612</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="x">2</property>
+            <property name="y">331</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="btn_Quit12">
+            <property name="label">gtk-close</property>
+            <property name="width_request">62</property>
+            <property name="height_request">51</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_stock">True</property>
+            <signal name="clicked" handler="on_btn_Quit12_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">541</property>
+            <property name="y">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHSeparator" id="hseparator2">
+            <property name="width_request">620</property>
+            <property name="height_request">22</property>
+            <property name="visible">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkVBox" id="vbox1">
+            <property name="width_request">243</property>
+            <property name="height_request">146</property>
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkEntry" id="Gtk_entryNamePlaylist">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="max_length">35</property>
+                <property name="invisible_char">●</property>
+                <property name="invisible_char_set">True</property>
+                <property name="secondary_icon_stock">gtk-edit</property>
+                <property name="secondary_icon_activatable">True</property>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">189</property>
+            <property name="y">113</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lbl_reponsePl">
+            <property name="width_request">574</property>
+            <property name="height_request">41</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">.................</property>
+            <attributes>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="ultrabold"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="size" value="6"/>
+              <attribute name="foreground" value="#604057362337"/>
+              <attribute name="background" value="#bc53e8b8ffff"/>
+              <attribute name="scale" value="5,000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">233</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
